@@ -315,8 +315,8 @@
             
             // Format the amount
             const formattedAmount = tx.amount 
-                ? `${tx.currency_code || 'SGD'} ${parseFloat(tx.amount).toFixed(2)}`
-                : 'N/A';
+            ? `${tx.currency_code || 'SGD'} ${(parseFloat(tx.amount) / 100).toFixed(2)}`
+            : 'N/A';
             
             // Format the datetime
             const formattedDate = tx.datetime 
@@ -400,4 +400,5 @@
         }
     </script>
 </body>
+
 </html>

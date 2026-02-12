@@ -226,6 +226,85 @@
             margin-top: 20px;
             font-style: italic;
         }
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                margin: 20px auto;
+                border-radius: 15px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .header p {
+                font-size: 1em;
+            }
+            
+            .content {
+                padding: 25px 20px;
+            }
+            
+            .fetch-button {
+                padding: 15px 30px;
+                font-size: 16px;
+            }
+            
+            .transaction-card {
+                padding: 20px;
+            }
+            
+            .transaction-title {
+                font-size: 1.3em;
+            }
+            
+            .transaction-row {
+                flex-direction: column;
+                padding: 15px 0;
+            }
+            
+            .transaction-label {
+                width: 100%;
+                margin-bottom: 5px;
+                font-size: 0.9em;
+                color: #667eea;
+            }
+            
+            .transaction-value {
+                font-size: 1em;
+                padding-left: 0;
+            }
+            
+            .amount-highlight {
+                font-size: 1.5em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .transaction-title {
+                font-size: 1.2em;
+            }
+            
+            .transaction-label {
+                font-size: 0.85em;
+            }
+            
+            .transaction-value {
+                font-size: 0.95em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -402,3 +481,4 @@
 </body>
 
 </html>
+
